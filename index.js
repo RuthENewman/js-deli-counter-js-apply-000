@@ -1,8 +1,9 @@
+var ticketNumber = 0;
 
-
-function takeANumber(currentLine, newPerson) {
-  currentLine.push(newPerson);
-  return `Welcome, ${newPerson}. You are number ${currentLine.length} in line.`;
+function takeANumber(currentLine) {
+  ticketNumber++;
+  currentline.push(ticketNumber);
+  return `Your ticket number is ${ticketNumber}. You are number ${currentLine.length} in line.`;
 }
 
 function nowServing(katzDeliLine) {
